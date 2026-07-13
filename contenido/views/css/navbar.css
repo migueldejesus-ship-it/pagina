@@ -1,0 +1,88 @@
+/*
+ * Estilos del Navbar
+ */
+.tamaniologo {
+    width: 10rem;
+}
+
+.toggleImg {
+    content: var(--logoBlanco);
+}
+
+.shadow-lg {
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .100) !important;
+}
+
+.nav-link:focus,
+.nav-link:hover {
+    color: #c6bfa8 !important;
+}
+
+.dropdown-item:focus,
+.dropdown-item:hover {
+    background-color: #c6bfa8 !important;
+
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+    color: #fff !important;
+    text-decoration: none !important;
+    background-color: rgba(183, 147, 37) !important;
+}
+
+@media all and (min-width: 1400px) {
+
+    .dropdown-menu li {
+        position: relative;
+    }
+
+    .dropdown-menu .submenu {
+        display: none;
+        position: absolute;
+        left: 100%;
+        top: -7px;
+    }
+
+    .dropdown-menu .submenu-left {
+        right: 100%;
+        left: auto;
+    }
+
+    .dropdown-menu>li:hover {
+        background-color: #f1f1f1
+    }
+
+    .dropdown-menu>li:hover>.submenu {
+        display: block;
+    }
+
+    .navbar .nav-item .menu {
+        display: block;
+        opacity: 0;
+        visibility: hidden;
+        transition: .3s;
+    }
+
+    .navbar .nav-item:hover .menu {
+        opacity: 1;
+        visibility: visible;
+        transform: rotateX(0deg);
+    }
+}
+
+@media (max-width: 1399px) {
+    .dropdown-menu .dropdown-menu {
+        margin-left: 0.7rem;
+        margin-right: 0.7rem;
+        margin-bottom: .5rem;
+    }
+
+    .logo {
+        margin-right: 0rem;
+    }
+}
+
+/*
+ * Término de estilos del Navbar
+ */

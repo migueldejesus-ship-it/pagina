@@ -1,0 +1,250 @@
+.espacio {
+    padding-top: 5vh;
+    /* padding-bottom: 10vh; */
+}
+
+.content {
+    position: relative;
+}
+
+
+
+
+
+
+.video-preview {
+    position: relative;
+
+}
+
+.video-btn-xl {
+    width: 120px;
+    height: 120px;
+    margin-top: -60px;
+    margin-left: -60px;
+}
+
+.video-btn {
+    position: absolute !important;
+    top: 50%;
+    left: 50%;
+    display: inline-block;
+    text-align: center;
+    color: #fff;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+}
+
+.video-btn::before {
+    content: '';
+    position: absolute;
+    left: -5px;
+    right: -5px;
+    top: -5px;
+    bottom: -5px;
+    background: rgba(255, 255, 255, 0.2);
+    opacity: 0;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-transition: all 400ms ease-in-out;
+    -moz-transition: all 400ms ease-in-out;
+    -o-transition: all 400ms ease-in-out;
+    -ms-transition: all 400ms ease-in-out;
+    transition: all 400ms ease-in-out;
+}
+
+.video-btn.video-btn-xl:hover:before {
+    opacity: .75;
+    left: -32px;
+    right: -32px;
+    top: -32px;
+    bottom: -32px;
+}
+
+.video-btn:hover .video-block-wrapper {
+    -moz-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    -webkit-transform: scale(0.95);
+    -o-transform: scale(0.95);
+    transform: scale(0.95);
+}
+
+.video-btn.video-btn-xl [class^="fa-solid "]::before, .video-btn.video-btn-xl [class^="fa-solid "]::after {
+    line-height: 120px !important;
+    margin-left: 10px;
+}
+
+.ico-90 [class*="fa-solid "]::before, .ico-90 [class*="fa-solid "]::after {
+    font-size: 5.625rem;
+}
+
+span[class^="fa-solid "]::before, span[class*=" fa-solid "]::before {
+    font-family: fontawesome !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    font-size: 20px;
+    line-height: 1 !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.fa-play::before {
+    content: "\f04b";
+}
+
+@media (min-width: 321px) and (max-width: 413.95px) {
+    .video-btn-xl {
+        width: 70px;
+        height: 70px;
+        margin-top: -35px;
+        margin-left: -35px;
+    }
+    .video-btn.video-btn-xl [class^="fa-solid "]:before,
+    .video-btn.video-btn-xl [class^="fa-solid "]:after {
+        font-size: 2.75rem;
+        line-height: 70px !important;
+        margin-left: 7px;
+    }
+    .cardimagen {
+        width: 100%!important;
+        height: 38vh !important;
+        left: 10vw!important;
+    }
+    .imagenes {
+        width: 100%!important;
+        height: 46vh!important;
+    }
+    .cardsvideo {
+        width: 100%!important;
+        height: 38vh !important;
+        left: -3vw!important;
+    }
+    .videos {
+        width: 100%!important;
+        height: 46vh!important;
+    }
+    .tarjetaimagen {
+        height: 12vh!important;
+        max-width: 86vw!important;
+        top: 3vh!important;
+        left: 0vh!important;
+    }
+    .imgimagen {
+        width: 37%!important;
+        height: 81%!important;
+        top: 2vh!important;
+    }
+    .embed-responsive {
+        width: 80vw!important;
+        height: 35vh !important;
+    }
+    .tarjetaVideo {
+        height: 12vh!important;
+        max-width: 86vw!important;
+        top: 3vh!important;
+        left: 0vh!important;
+    }
+    .imgvideo {
+        width: 37%!important;
+        height: 81%!important;
+        top: 2vh!important;
+    }
+    .card-title {
+        top: -8vh!important;
+        position: relative!important;
+        left: 25vw!important;
+        width: 40vw!important;
+        font-size: 0.80rem!important;
+        text-align: center!important;
+    }
+    .social-bar a {
+        padding: 8px!important;
+    }
+    .espacio {
+        padding-bottom: 0vh!important;
+    }
+}
+
+.cardimagen {
+    background-color: transparent;
+    width: 50%;
+    height: 40%;
+    top: 1.3vh;
+    left: 6.3vh;
+    align-items: end;
+}
+
+.imagenes {
+    width: 50%;
+    height: 46vh;
+}
+
+.embed-responsive {
+    width: 30vw;
+    height: 42vh;
+}
+
+.tarjetaimagen {
+    max-width: 35vw;
+}
+
+.imgimagen {
+    width: 100%;
+    height: 100%;
+    top: 1vh;
+    left: 2vw;
+    border-radius: 12px;
+    box-shadow: 15px 21px 30px 0 rgb(0 0 0 / 15%);
+}
+
+.tarjetaimagen:hover{
+    cursor: pointer;
+    transform: translateY(-7px);
+}
+
+.cardsvideo {
+    background-color: transparent;
+    width: 50%;
+    height: 46vh;
+    top: 2.3vh;
+    right: 30px;
+}
+
+.videos {
+    width: 50%;
+    height: 46vh;
+}
+
+.embed-responsive {
+    width: 30vw;
+    height: 40vh;
+    border-radius: 30px;
+    box-shadow: 12px 16px 19px -2px rgb(0 0 0 / 21%);
+}
+
+.tarjetaVideo {
+    max-width: 35vw;
+    background-color: white;
+    border-radius: 24px 4px;
+    box-shadow: 7px 7px 30px 0 rgb(0 0 0 / 15%);
+    left: 3vh;
+}
+
+.tarjetaVideo:hover {
+    cursor: pointer;
+    transform: translateY(-7px);
+    box-shadow: 7px 7px 30px 0 rgb(0 0 0 / 15%);
+}
+
+.imgvideo {
+    width: 76%;
+    height: 81%;
+    top: 1vh;
+    position: relative;
+    left: 2vw;
+    border-radius: 1vh;
+}

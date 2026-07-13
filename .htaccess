@@ -1,0 +1,26 @@
+Options +FollowSymLinks
+RewriteEngine On
+
+# 1. Si el archivo o carpeta existen físicamente en el servidor, no hagas nada
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# 2. Reglas específicas (usamos '$' al final para que sean exactas)
+RewriteRule ^boletin/([0-9]+)$ boletin.php?boletin=$1 [L,QSA]
+RewriteRule ^noticias$ boletines.php [L,QSA]
+RewriteRule ^cuentapublica$ cuentapublica.php [L,QSA]
+RewriteRule ^estados-financieros-todo$ estadosFinancieros.php [L,QSA]
+RewriteRule ^etica$ etica.php [L,QSA]
+RewriteRule ^evaluacion$ evaluacion.php [L,QSA]
+RewriteRule ^inventario$ inventario.php [L,QSA]
+RewriteRule ^cursos$ ofertaEducativa.php [L,QSA]
+RewriteRule ^oferta-laboral$ ofertaLaboral.php [L,QSA]
+RewriteRule ^posgrados$ posgrados.php [L,QSA]
+RewriteRule ^preguntasfrecuentes$ preguntasfrecuentes.php [L,QSA]
+RewriteRule ^acerca$ quienesSomos.php [L,QSA]
+RewriteRule ^transparencia$ transparencia.php [L,QSA]
+RewriteRule ^revistas$ revista.php [L,QSA]
+
+# 3. Regla para la raíz o carpetas vacías (index) al final de todo
+RewriteRule ^$ index.php [L,QSA]

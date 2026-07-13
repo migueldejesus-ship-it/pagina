@@ -1,0 +1,48 @@
+.social-bar {
+    position: fixed;
+    top: 62%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 100;
+}
+
+.social-bar a {
+    display: block;
+    text-align: center;
+    padding: 9px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+}
+
+.social-bar a:hover {
+    background-color: #43B7A4;
+}
+
+.facebook {
+    background: #3B5998;
+    color: white;
+    border-radius: 0px 15px 0px 0px;
+}
+
+.twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.youtube {
+    background: #bb0000;
+    color: white;
+}
+
+.tiktok {
+    background: #000000;
+    color: white;
+}
+
+.spotify {
+    background: #1ed760;
+    color: white;
+    border-radius: 0px 0px 15px 0px;
+}

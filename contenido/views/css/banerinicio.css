@@ -1,0 +1,23 @@
+.card {
+    border: none !important;
+}
+
+.cardbanerinicio {
+    overflow: hidden;
+    box-shadow: 7px 7px 30px 0px rgba(0, 0, 0, .30);
+    border-radius: 15px;
+}
+
+.cardbanerinicio:hover {
+    transform: translateY(0px);
+}
+
+.cardbanerinicio:hover:before {
+    opacity: 1;
+}
+
+.cardbanerinicio:hover {
+    cursor: pointer;
+    transform: translateY(-7px);
+    box-shadow: 7px 7px 30px 0 rgb(0 0 0 / 30%);
+}

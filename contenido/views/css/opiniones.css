@@ -1,0 +1,104 @@
+/* Inicio Opiniones */
+.seccionOpiniones {
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+    /* background: linear-gradient(to bottom, #1F2633 0%, #1F2633 50%, white 50%, white 100% ); */
+    /* background-image: url('../img/plantilla/contacto.webp') !important; */
+}
+
+.divOpiniones {
+    border-radius: 2rem !important;
+    background-color: white;
+    padding: 1.5rem 2rem 1.5rem 2rem;
+    box-shadow: 7px 7px 30px 0px rgba(0, 0, 0, .15);
+}
+
+.contactoOpiniones {
+    border-radius: 2rem;
+    background-color: #43B7A4;
+    padding: 2rem;
+    color: white !important;
+}
+
+.contact-form .form-control {
+    border-radius: 1rem;
+}
+
+.contact-image {
+    text-align: center;
+}
+
+.contact-image img {
+    border-radius: 1rem;
+    width: 20%;
+    margin-top: -3%;
+}
+
+textarea {
+    font-size: 15px;
+    width: 100%;
+    min-height: auto !important;
+    max-height: auto !important;
+    height: 150px !important;
+    padding-top: 20px !important;
+}
+
+.form-control {
+    font-size: 15px;
+    height: 60px;
+    border: none;
+    outline: none;
+    padding-left: 20px;
+    border-radius: 8px;
+    -webkit-box-shadow: 0 1px 5px rgb(0 0 0 / 10%);
+    box-shadow: 0 1px 5px rgb(0 0 0 / 10%);
+}
+
+.form-group-flex{
+    display: flex;
+    flex-direction: column;
+}
+
+form label{
+    order: 1;
+}
+
+form .app-form-control{
+    order: 2;
+}
+
+.app-form-control {
+    width: 100%;
+    padding: 10px 0;
+    background: none;
+    border: none;
+    border-bottom: 1.5px solid #666;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.app-form-control::placeholder {
+    color: #ddd;
+}
+
+.app-form-control:focus {
+    border-bottom-color: var(--color-base);
+}
+
+.app-form-control:focus + label{
+    transition: color 0.2s;
+    color: var(--color-base);
+}
+
+.form-check-input:checked {
+    background-color: var(--color-base);
+    border-color: var(--color-base);
+}
+
+.form-check-input:focus {
+    border-color: var(--color-base);
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem var(--color-degradado);
+}
+
+/* Fin Opiniones */

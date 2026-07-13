@@ -1,0 +1,99 @@
+.bg-footer{
+    background-color: #f8f9faa3;
+}
+
+.footerLinks h1 {
+    font-size: 1rem;
+}
+
+#redes {
+    /*position: fixed;*/
+    top: 50%;
+    text-align: right;
+    width: 120%;
+}
+
+#redes a {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    border-radius: 50%;
+    background-color: #6c757d;
+}
+
+#redes a .fab,
+#redes a .fa-brands,
+#redes a .fa-solid {
+    color: #FFF;
+}
+
+#redes a:hover {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transition: all .2s ease;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    z-index: 7;
+}
+
+#redes a span {
+    position: absolute;
+    left: 50%;
+    color: #FFF;
+    display: none;
+    border-bottom: 2px solid #b08800;
+    padding-bottom: 8px;
+    background-color: #555;
+    top: -30px;
+    height: 20px;
+    line-height: 20px;
+    border-radius: 5px;
+    font-size: 80%;
+    white-space: nowrap;
+}
+
+#redes .facebook:hover {
+    background-color: #3b5998;
+}
+
+#redes .twitter:hover {
+    background-color: #55acee;
+}
+
+#redes .youtube:hover {
+    background-color: #FF0000;
+}
+
+#redes .periscope:hover {
+    background-color: #40A4C4;
+}
+
+#redes .tiktok:hover {
+    background-color: black;
+}
+
+#redes .maps:hover {
+    background-color: #32A34F;
+}
+
+.footerLine{
+    border-top: 1px solid rgba(0, 0, 0, 0.05) !important;
+}
+
+.mapa{
+    height: 300px;
+    width: 500px;
+}
+
+@media screen and (max-width: 479px) {
+
+    .mapa{
+        width: 300px !important;
+    }
+
+}
