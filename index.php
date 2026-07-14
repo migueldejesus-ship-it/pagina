@@ -32,15 +32,13 @@ $consultarBoletines= ControladorDatosBoletines::ctrBoletinesTres();
     <noscript>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     </noscript>
-    <link rel="preload" href="contenido/views/css/micrositio2.css" as="style"
-        onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="contenido/views/css/micrositio2.css" as="style"onload="this.onload=null;this.rel='stylesheet'">
 </head>
 <div id="fb-root"></div>
 <script async defer crossorigin="anonymous"
     src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v23.0"></script>
 
 <body>
-
     <div class="heightBody">
         <?php
             include 'nabvar.html';
@@ -68,7 +66,22 @@ $consultarBoletines= ControladorDatosBoletines::ctrBoletinesTres();
                 </button>
             </div>
         </section>
-        <section class="container-fluid divAccesibilidad seccionOpiniones lazy paralaxVerde">
+        <div style="max-width: 1140px; margin: 2rem auto; padding: 0 15px; font-family: sans-serif;">
+            <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; margin-bottom: 3rem;">
+                <div style="flex: 1; min-width: 280px; max-width: 540px; text-center;">
+                    <a href="https://ipmp.edu.mx" style="display: block; background-color: #3c4e4e; color: #ffffff; text-decoration: none; padding: 18px 24px; font-size: 15px; border-radius: 4px; text-align: center; line-height: 1.4; font-weight: 500;"> Resultados del proceso de admisión Maestría en Innovación Educativa</a>
+                </div>
+                <div style="flex: 1; min-width: 280px; max-width: 540px; text-center;">
+                    <a href="https://ipmp.edu.mx"style="display: block; background-color: #3c4e4e; color: #ffffff; text-decoration: none; padding: 18px 24px; font-size: 15px; border-radius: 4px; text-align: center; line-height: 1.4; font-weight: 500;">Resultados del proceso de admisión Doctorado en Innovación Educativa </a>
+                </div>
+            </div>
+            <div style="display: flex; justify-content: center;">
+                <div style="min-width: 250px; max-width: 400px;">
+                    <a href="https://ipmp.edu.mx" id="btn-1776382831436"style="display: block; background-color: #3c4e4e; color: #ffffff; text-decoration: none; padding: 12px 24px; font-size: 15px; border-radius: 4px; text-align: center; line-height: 1.4; font-weight: 500;">Mi desempeño académico</a>
+                </div>
+            </div>
+        </div>
+  <section class="container-fluid divAccesibilidad seccionOpiniones lazy paralaxVerde">
             <div class="Convocatoria y Método">
                 <div class="d-flex justify-content-start flex-md-wrap flex-wrap espacioLateralCYM espacioCards">
                     <div class="row">
@@ -238,21 +251,53 @@ $consultarBoletines= ControladorDatosBoletines::ctrBoletinesTres();
                                     referrerpolicy="no-referrer-when-downgrade"></iframe>
                             </center>
                         </div>
-                        <div class="col-md-12">
-                            <h1 class="colorWhite"> Redes Sociales </h1>
-                        </div>
-
-                        <div class="col-sm-12 col-md-12 col-xl-6 margin2rem">
+                        <div>
                             <center>
-                                <h5 class="colorWhite"> Facebook </h5> <br>
-                                <img class="cardDiseño2" src="2025/redesSociales/facebook.webp" alt="facebook">
+                                <h3 class="colorWhite">Campaña contra la Corrupción</h3>
                             </center>
-                        </div>
-                        <div class="col-sm-12 col-md-12 col-xl-6 margin2rem">
-                            <center>
-                                <h5 class="colorWhite"> Instagram </h5> <br>
-                                <img class="cardDiseño2" src="2025/redesSociales/instagram.webp" alt="instagram">
-                            </center>
+                            <div style="max-width: 500px; margin: 0 auto;">
+                                <div id="carouselExampleInterval" class="carousel slide carousel-dark headline divAccesibilidad" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active" data-bs-interval="5000">
+                                            <div class="ratio ratio-16x9">
+                                                <iframe width="560" height="315" src="https://www.youtube.com/embed/6yMsAKPA9bw?si=L8eNTulbMq2OpDNk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item" data-bs-interval="2000">
+                                                <img src="contenido/views/img/Corrupcion.1.jpeg" class="w-100">
+                                            </div>
+                                            <div class="carousel-item" data-bs-interval="2000">
+                                                <img src="contenido/views/img/Corrupcion.2.jpeg" class="w-100" >
+                                            </div>
+                                            <div class="carousel-item" data-bs-interval="2000">
+                                                <img src="contenido/views/img/Corrupcion.3.jpeg" class="w-100" >
+                                            </div>
+                                            <div class="carousel-item" data-bs-interval="2000">
+                                                <img src="contenido/views/img/Corrupcion.4.jpeg" class="w-100">
+                                            </div>
+                                            <div class="carousel-item" data-bs-interval="2000">
+                                                <img src="contenido/views/img/Corrupcion.5.jpeg" class="w-100">
+                                            </div>
+                                            <div class="carousel-item" data-bs-interval="2000">
+                                                <img src="contenido/views/img/Corrupcion.6.jpeg" class="w-100">
+                                            </div>
+                                            <div class="carousel-item" data-bs-interval="2000">
+                                                <img src="contenido/views/img/Corrupcion.7.jpeg" class="w-100">
+                                            </div>
+                                            <div class="carousel-item" data-bs-interval="2000">
+                                                <img src="contenido/views/img/Corrupcion.8.jpeg" class="w-100">
+                                            </div> 
+                                        </div>
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>  
+                                    </div>
+                                </div>
                         </div>
                         <div class="col-sm-12 col-md-12 col-xl-6 margin10rem">
                             <center>
@@ -292,6 +337,7 @@ $consultarBoletines= ControladorDatosBoletines::ctrBoletinesTres();
         integrity="sha512-72WD92hLs7T5FAXn3vkNZflWG6pglUDDpm87TeQmfSg8KnrymL2G30R7as4FmTwhgu9H7eSzDCX3mjitSecKnw=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
         </script>
+
 </body>
 
 </html>
