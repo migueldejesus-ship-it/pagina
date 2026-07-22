@@ -25,6 +25,7 @@ $consultarBoletines= ControladorDatosBoletines::ctrBoletinesTres();
     <script src='https://code.jquery.com/jquery-3.4.1.min.js' type='text/javascript'></script>
     <link rel="shortcut icon" href="contenido/views/img/favicon.ico">
     <link rel="apple-touch-icon" href="contenido/views/icons/logo.webp">
+    <link href="https://jsdelivr.net" rel="stylesheet">
     <link rel="preload" href="contenido/views/css/plugins/bootstrap.min.css" as="style"
         onload="this.onload=null;this.rel='stylesheet'">
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" as="style"
@@ -106,7 +107,8 @@ $consultarBoletines= ControladorDatosBoletines::ctrBoletinesTres();
                         </div>
                         <div class="col-sm-12 col-md-12 col-xl-3">
                             <center>
-                                <a href="noticias">
+                                <a href="noticias" >
+                                      
                                     <div class="card cardinicio cardDiseñoInicio ">
                                         <img src="contenido/views/img/boletines.webp" class="card-img-top"
                                             alt="Boletines">
@@ -120,6 +122,7 @@ $consultarBoletines= ControladorDatosBoletines::ctrBoletinesTres();
                                     <img src="contenido/views/img/revista.webp" class="card-img-top" alt="Revista"
                                         data-toggle="modal" data-target="#exampleModal">
                                 </div>
+
                             </center>
                         </div>
                     </div>
@@ -164,6 +167,11 @@ $consultarBoletines= ControladorDatosBoletines::ctrBoletinesTres();
                                     src="https://online.fliphtml5.com/mkroc/jdsb/" width="300" height="150"
                                     frameborder="0" scrolling="no" seamless="seamless"
                                     allowfullscreen="allowfullscreen"></iframe></div>
+                                    <div class="modal-body">
+                                        <button style="background-color: #f2f2f2 !important; border-radius: 36px; border-color: transparent !important;">
+                                            <a style="text-decoration: none !important; color: black !important; border-radius: 36px !important;" href="revista.php">Números anteriores </a>
+                                        </button>
+                                    </div>
                         </div>
                     </div>
                 </div>
@@ -219,110 +227,112 @@ $consultarBoletines= ControladorDatosBoletines::ctrBoletinesTres();
                 </div>
             </div>
         </section>
-        <section class="container-fluid divAccesibilidad seccionOpiniones lazy paralaxVerdeClaro">
-            <div class="Convocatoria y Método">
-                <div class="d-flex justify-content-start flex-md-wrap flex-wrap espacioLateralCYM espacioCards">
-                    <div class="row">
-                        <div class="col-sm-12 col-md-4 col-xl-3 p-3 mb-2">
-                            <center><i class="fa-solid fa-location-dot colorWhite"></i>
-                                <p class="colorWhite"> Dirección </p>
-                                <span class="colorWhite">
-                                    Calle 35 Norte No. 3626 C.P. 72070 Col. Ex Rancho Colorado, Puebla, Pue.
-                                </span>
-                            </center>
+
+<section class="container-fluid divAccesibilidad seccionOpiniones lazy paralaxVerdeClaro py-5">
+    <div class="container Convocatoria-y-Metodo">
+        <div class="row text-center mb-5 align-items-center justify-content-center">
+
+            <div class="col-sm-12 col-md-4 col-xl-3 p-3 mb-2">
+                <i class="fa-solid fa-location-dot colorWhite mb-2"></i>
+                <p class="colorWhite fw-bold"> Dirección </p>
+                <span class="colorWhite">
+                    Calle 35 Norte No. 3626 C.P. 72070 Col. Ex Rancho Colorado, Puebla, Pue.
+                </span>
+            </div>
+            <div class="col-sm-12 col-md-4 col-xl-3 p-3 mb-2">
+                <i class="fa-regular fa-envelope colorWhite mb-2"></i>
+                <p class="colorWhite fw-bold"> Correo Electrónico </p>
+                <span class="colorWhite d-block">ipmp@seppue.gob.mx</span>
+            </div>
+            <div class="col-sm-12 col-md-4 col-xl-3 p-3 mb-2">
+                <i class="fa-solid fa-phone colorWhite mb-2"></i>
+                <p class="colorWhite fw-bold"> Teléfono </p> 
+                <span class="colorWhite d-block"> +52(222) 2318902</span>
+            </div>
+            <div class="col-sm-12 col-md-12 col-xl-3 p-3 mb-2">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.796500040279!2d-98.21126682396675!3d19.072682882131325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc139b1b09c85%3A0xf7756792a527eecb!2sInstituto%20de%20Profesionalizaci%C3%B3n%20del%20Magisterio%20Poblano!5e0!3m2!1ses!2smx!4v1753378381666!5m2!1ses!2smx"
+                    width="100%" height="250" class="border0 rounded" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="row justify-content-center mb-5">
+            <div class="col-12 col-md-8 col-xl-6">
+                <div id="segundoCarrusel" class="carousel slide carousel-dark headline" data-bs-ride="carousel">
+                    <div class="carousel-inner shadow rounded bg-light">
+                        <div class="carousel-item active">
+                            <div class="ratio ratio-16x9 c-max-height">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/6yMsAKPA9bw?si=PNIoHK0lFem7flfx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
                         </div>
-                        <div class="col-sm-12 col-md-4 col-xl-3 p-3 mb-2">
-                            <center> <i class="fa-regular fa-envelope colorWhite"></i>
-                                <p class="colorWhite"> Correo Electrónico </p>
-                                <span class="colorWhite">ipmp@seppue.gob.mx</span>
-                            </center>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="contenido/views/img/Corrupcion.1.jpeg" class="w-100 d-block object-fit-cover c-max-height" alt="Corrupción 1">
                         </div>
-                        <div class="col-sm-12 col-md-4 col-xl-3 p-3 mb-2">
-                            <center> <i class="fa-solid fa-phone colorWhite"></i>
-                                <p class="colorWhite"> Teléfono </p> <span class="colorWhite"> +52(222)
-                                    2318902</span>
-                            </center>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="contenido/views/img/Corrupcion.2.jpeg" class="w-100 d-block object-fit-cover c-max-height" alt="Corrupción 2">
                         </div>
-                        <div class="col-sm-12 col-md-12 col-xl-3 p-3 mb-2">
-                            <center>
-                                <iframe
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.796500040279!2d-98.21126682396675!3d19.072682882131325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc139b1b09c85%3A0xf7756792a527eecb!2sInstituto%20de%20Profesionalizaci%C3%B3n%20del%20Magisterio%20Poblano!5e0!3m2!1ses!2smx!4v1753378381666!5m2!1ses!2smx"
-                                    width="300" height="300" class="border0" allowfullscreen="" loading="lazy"
-                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-                            </center>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="contenido/views/img/Corrupcion.3.jpeg" class="w-100 d-block object-fit-cover c-max-height" alt="Corrupción 3">
                         </div>
-                        <div>
-                            <center>
-                                <h3 class="colorWhite">Campaña contra la Corrupción</h3>
-                            </center>
-                            <div style="max-width: 500px; margin: 0 auto;">
-                                <div id="carouselExampleInterval" class="carousel slide carousel-dark headline divAccesibilidad" data-bs-ride="carousel">
-                                    <div class="carousel-inner">
-                                        <div class="carousel-item active" data-bs-interval="5000">
-                                            <div class="ratio ratio-16x9">
-                                                <iframe width="560" height="315" src="https://www.youtube.com/embed/6yMsAKPA9bw?si=L8eNTulbMq2OpDNk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                                                </div>
-                                            </div>
-                                            <div class="carousel-item" data-bs-interval="2000">
-                                                <img src="contenido/views/img/Corrupcion.1.jpeg" class="w-100">
-                                            </div>
-                                            <div class="carousel-item" data-bs-interval="2000">
-                                                <img src="contenido/views/img/Corrupcion.2.jpeg" class="w-100" >
-                                            </div>
-                                            <div class="carousel-item" data-bs-interval="2000">
-                                                <img src="contenido/views/img/Corrupcion.3.jpeg" class="w-100" >
-                                            </div>
-                                            <div class="carousel-item" data-bs-interval="2000">
-                                                <img src="contenido/views/img/Corrupcion.4.jpeg" class="w-100">
-                                            </div>
-                                            <div class="carousel-item" data-bs-interval="2000">
-                                                <img src="contenido/views/img/Corrupcion.5.jpeg" class="w-100">
-                                            </div>
-                                            <div class="carousel-item" data-bs-interval="2000">
-                                                <img src="contenido/views/img/Corrupcion.6.jpeg" class="w-100">
-                                            </div>
-                                            <div class="carousel-item" data-bs-interval="2000">
-                                                <img src="contenido/views/img/Corrupcion.7.jpeg" class="w-100">
-                                            </div>
-                                            <div class="carousel-item" data-bs-interval="2000">
-                                                <img src="contenido/views/img/Corrupcion.8.jpeg" class="w-100">
-                                            </div> 
-                                        </div>
-                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                            <span class="visually-hidden">Previous</span>
-                                        </button>
-                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                            <span class="visually-hidden">Next</span>
-                                        </button>  
-                                    </div>
-                                </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="contenido/views/img/Corrupcion.4.jpeg" class="w-100 d-block object-fit-cover c-max-height" alt="Corrupción 4">
                         </div>
-                        <div class="col-sm-12 col-md-12 col-xl-6 margin10rem">
-                            <center>
-                                <a href="https://www.plataformadetransparencia.org.mx/">
-                                    <img src="contenido/views/img/portal_pnt.webp" alt="pnt ipmp">
-                                </a>
-                            </center>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="contenido/views/img/Corrupcion.5.jpeg" class="w-100 d-block object-fit-cover c-max-height" alt="Corrupción 5">
                         </div>
-                        <div class="col-sm-12 col-md-12 col-xl-6 margin10rem">
-                            <center>
-                                <a
-                                    href="https://consultapublicamx.plataformadetransparencia.org.mx/vut-web/?idSujetoObigadoParametro=16350&idEntidadParametro=21&idSectorParametro=21">
-                                    <img src="contenido/views/img/portal_pnt_ipmp.webp" alt="pnt ipmp">
-                                </a>
-                            </center>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="contenido/views/img/Corrupcion.6.jpeg" class="w-100 d-block object-fit-cover c-max-height" alt="Corrupción 6">
                         </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="contenido/views/img/Corrupcion.7.jpeg" class="w-100 d-block object-fit-cover c-max-height" alt="Corrupción 7">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="contenido/views/img/Corrupcion.8.jpeg" class="w-100 d-block object-fit-cover c-max-height" alt="Corrupción 8">
+                        </div> 
                     </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#segundoCarrusel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#segundoCarrusel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
             </div>
-        </section>
+        </div>
+  
+        <div class="row text-center justify-content-center align-items-center mt-5">
+
+            <div class="col-10 col-sm-6 col-md-5 col-xl-4 mb-4">
+                <a href="https://plataformadetransparencia.org.mx" class="d-inline-block">
+                    <img src="contenido/views/img/portal_pnt.webp" class="img-fluid rounded shadow-sm custom-banner" alt="pnt ipmp">
+                </a>
+            </div>
+            <div class="col-10 col-sm-6 col-md-5 col-xl-4 mb-4">
+                <a href="https://plataformadetransparencia.org.mx" class="d-inline-block">
+                    <img src="contenido/views/img/portal_pnt_ipmp.webp" class="img-fluid rounded shadow-sm custom-banner" alt="pnt ipmp">
+                </a>
+            </div>
+        </div>
+
+</section>
+<style>
+.custom-banner {
+    width: 100%;
+    height: auto !important; 
+    max-width: 350px;       
+    object-fit: contain;    
+}
+</style>
+
+
+<div>
         <?php
             include 'footer.html';
         ?>
     </div>
-
+    
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
@@ -337,6 +347,7 @@ $consultarBoletines= ControladorDatosBoletines::ctrBoletinesTres();
         integrity="sha512-72WD92hLs7T5FAXn3vkNZflWG6pglUDDpm87TeQmfSg8KnrymL2G30R7as4FmTwhgu9H7eSzDCX3mjitSecKnw=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
         </script>
+        <script src="https://jsdelivr.net"></script>
 
 </body>
 

@@ -54,16 +54,16 @@ textarea {
     box-shadow: 0 1px 5px rgb(0 0 0 / 10%);
 }
 
-.form-group-flex{
+.form-group-flex {
     display: flex;
     flex-direction: column;
 }
 
-form label{
+form label {
     order: 1;
 }
 
-form .app-form-control{
+form .app-form-control {
     order: 2;
 }
 
@@ -85,7 +85,7 @@ form .app-form-control{
     border-bottom-color: var(--color-base);
 }
 
-.app-form-control:focus + label{
+.app-form-control:focus+label {
     transition: color 0.2s;
     color: var(--color-base);
 }

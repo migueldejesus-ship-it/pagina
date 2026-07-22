@@ -40,7 +40,6 @@ $consultarRevista = ControladorDatosRevista::ctrConsultarRevista();
     src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v23.0"></script>
 
 <body>
-
     <div class="heightBody">
         <?php
             include 'nabvar.html';
@@ -48,6 +47,7 @@ $consultarRevista = ControladorDatosRevista::ctrConsultarRevista();
         <section class="container-fluid divAccesibilidad seccionOpiniones lazy paralaxGris">
             <div class="Convocatoria y Método">
                 <div class="d-flex justify-content-start flex-md-wrap flex-wrap espacioLateralCYM espacioCards">
+                    
                     <div class="row">
                         <div class="col-md-12">
                             <h1 class="colorBlack">&nbsp;&nbsp;&nbsp; Revista</h1>
@@ -58,7 +58,6 @@ $consultarRevista = ControladorDatosRevista::ctrConsultarRevista();
                                     <img src="img_revista/'.$values['img'].'" class="card-img-top" alt="Revista"
                                         data-toggle="modal" data-target="#exampleModal'. $key .'">
                                 </div>
-
                                 <div class="modal fade" id="exampleModal'. $key .'" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                     <div class="modal-dialog" role="document">
                                         <div class="modal-content">
@@ -70,6 +69,7 @@ $consultarRevista = ControladorDatosRevista::ctrConsultarRevista();
                                             <div class="modal-body">
                                                 <div style="position:relative;padding-top:0;width:450px;height:800px;"><iframe style="position:absolute;border:none;width:100%;height:100%;left:0;top:0;" src="'.$values['url'].'" title="Revista" seamless="seamless" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" ></iframe></div>
                                             </div>
+                                            
                                         </div>
                                     </div>
                                 </div>
